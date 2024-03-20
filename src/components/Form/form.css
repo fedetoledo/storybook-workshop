@@ -1,0 +1,20 @@
+.storybook-form {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 16px;
+  border-radius: 8px;
+  border: 2px solid steelblue;
+  transition: all 600ms linear;
+}
+
+.storybook-form button {
+  margin-top: 12px;
+  width: 100%;
+}
+
+.submitted {
+  border-color: rgb(65, 235, 65);
+}
+
+.submitted-label {
+  margin-top: 16px;
+}

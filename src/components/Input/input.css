@@ -1,0 +1,12 @@
+.storybook-input {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.storybook-input input {
+  margin-bottom: 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 4px 8px;
+}
