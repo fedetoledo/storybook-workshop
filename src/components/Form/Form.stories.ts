@@ -6,7 +6,7 @@ import { expect, userEvent, within } from '@storybook/test';
 import { Form } from './Form';
 
 const meta = {
-  title: 'Compound/Form',
+  title: 'Components/Form',
   component: Form,
   tags: ['autodocs'],
   parameters: {
