@@ -8,9 +8,15 @@ import { Button } from '../Button/Button';
  */
 export const Form = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
-  const onSubmit = (event: FormEvent) => {
+  const onSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    if (event.target[0].value !== '' && event.target[1].value !== '') {
+    const email = (
+      event.currentTarget.elements.namedItem('email') as HTMLInputElement
+    ).value;
+    const password = (
+      event.currentTarget.elements.namedItem('password') as HTMLInputElement
+    ).value;
+    if (email !== '' && password !== '') {
       setFormSubmitted(true);
     }
   };
@@ -20,8 +26,8 @@ export const Form = () => {
       onSubmit={onSubmit}
       className={`storybook-form ${formSubmitted ? 'submitted' : ''}`}
     >
-      <Input label='email' type='email' />
-      <Input label='password' type='password' />
+      <Input label='email' type='email' name='email' />
+      <Input label='password' type='password' name='password' />
       <Button
         backgroundColor={formSubmitted ? 'green' : 'steelblue'}
         primary
