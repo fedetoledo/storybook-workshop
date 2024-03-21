@@ -15,12 +15,14 @@ type Story = StoryObj<typeof meta>;
 
 export const Text: Story = {
   args: {
+    name: 'name',
     label: 'Enter your name',
   },
 };
 
 export const Email: Story = {
   args: {
+    name: 'email',
     type: 'email',
     label: 'Enter your email',
   },
@@ -28,6 +30,7 @@ export const Email: Story = {
 
 export const Password: Story = {
   args: {
+    name: 'password',
     type: 'password',
     label: 'Enter your password',
   },
